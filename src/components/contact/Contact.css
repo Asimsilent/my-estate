@@ -1,0 +1,96 @@
+/* .c-warpper {
+  border: 1px solid red;
+} */
+.c-container {
+  /* border: 1px solid green; */
+  justify-content: space-between;
+}
+/* .c-container>div{
+    flex: 1;
+} */
+.c-left {
+  gap: 0.5rem;
+  /* border: 1px solid orangered; */
+}
+/* .c-right {
+  width: 100%;
+  border: 1px solid saddlebrown;
+} */
+/* .image-container {
+  border: 1px solid blueviolet;
+} */
+.contact-modes {
+  /* border: 1px solid teal; */
+  width: 100%;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+.row {
+  /* border: 1px solid yellow; */
+  /* margin: 5px; */
+  gap: 2rem;
+}
+.box {
+  /* border: 1px solid red; */
+  border-radius: 5px;
+  gap: 1rem;
+  width: 13rem;
+  transition: all 300ms ease-in;
+}
+.box > :nth-child(2) {
+  justify-content: center;
+  width: 100%;
+  background-color: rgba(128, 128, 128, 0.137);
+  color: rgb(41, 50, 179);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.box > :nth-child(2):hover {
+  scale: 0.8;
+  background-color: rgb(41, 50, 179);
+  color: white;
+}
+.box:hover {
+  scale: 1.1;
+  box-shadow: 10px 10px 50px 0px rgba(47, 0, 255, 0.411);
+}
+.box > :nth-child(1) {
+  width: 100%;
+  gap: 1.6rem;
+}
+.number-instruction > :nth-child(1) {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.call-data {
+  /* margin: 2px; */
+  /* border: 1px solid orangered; */
+  justify-content: center;
+}
+/* .call-icon {
+  margin: 2px;
+  border: 1px solid rgb(19, 53, 139);
+} */
+
+/* .number-instruction {
+  margin: 2px;
+  border: 1px solid lawngreen;
+} */
+@media (max-width: 980px) {
+  .c-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .c-left {
+    align-items: center;
+  }
+}
+@media (max-width: 620px) {
+  .row {
+    flex-direction: column;
+  }
+  .c-left .contact-modes {
+    align-items: center;
+    }
+}

@@ -1,0 +1,86 @@
+/* .r-wrapper {
+  border: 2px solid red;
+} */
+.r-container {
+  /* border: 3px solid green; */
+  overflow: hidden;
+  position: relative;
+}
+.r-head {
+  /* border: 3px solid yellow; */
+  margin-bottom: 2rem;
+}
+/* .r-head>:nth-child(2) {
+  align-items: center;
+} */
+/* .main-swiper {
+  border: 5px solid red;
+} */
+.r-card {
+  /* border: 3px solid green; */
+  gap: 0.6rem;
+  padding: 1rem;
+  border-radius: 10px;
+  max-width: max-content;
+  margin: auto;
+  transition: all 0.3s ease-in-out;
+}
+.r-card > img {
+  width: 100%;
+  max-width: 12rem;
+  border-radius: 10px;
+}
+.r-card > :nth-child(2) {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.r-card > :nth-child(3) {
+  font-size: 1.5rem;
+  width: 12rem;
+}
+.r-card > :nth-child(4) {
+  font-size: 0.7rem;
+  width: 12rem;
+}
+.r-card:hover {
+  scale: 1.025;
+  cursor: pointer;
+  background-color: rgba(0, 0, 255, 0.1);
+  box-shadow: 0px 72px 49px -51px rgba(0, 0, 255, 0.348);
+}
+.swiper-horizontal {
+  overflow: visible;
+}
+.r-button {
+  position: absolute;
+  gap: 1rem;
+  top: -4rem;
+  right: 2rem;
+}
+.r-button button{
+  font-size: 1.4rem;
+  padding: 0.2rem 0.8rem;
+  color: blue;
+  background-color: rgb(255, 253, 253);
+  /* border: 1px solid red; */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.r-button>:nth-child(1){
+  background-color: rgb(228, 225, 225);
+}
+.r-button>:nth-child(2){
+  box-shadow: 0px 0px 5px 1px hsla(0, 0%, 0%, 0.317);
+}
+
+@media (max-width:620px)
+{
+  .r-container .r-head {
+    align-items: center;
+  }
+  .r-button{
+    position: initial;
+    justify-content: center;
+  }
+}

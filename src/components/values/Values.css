@@ -1,0 +1,20 @@
+.v-wrapper{
+    border:1px solid red;
+}
+.v-container{
+    border: 1px solid green;
+    justify-content: space-between;
+}
+.v-container>div{
+    flex: 1
+}
+.v-left{
+    border: 3px solid purple;
+}
+.v-left .image-container{
+    border: 8px solid rgba(0, 0, 0, 0.179);
+}
+.v-right{
+    border: 1px solid yellow;
+    gap: 0.5rem;
+}

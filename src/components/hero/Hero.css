@@ -1,0 +1,127 @@
+.hero-wrapper {
+  color: white;
+  z-index: 1;
+  /* border: 3px solid red; */
+  position: relative;
+  /* background-color: hsla(0, 0%, 0%, 0.97); */
+}
+.hero-container {
+  /* border: 3px solid green; */
+  justify-content: space-around;
+}
+
+/* right side */
+
+.image-container {
+  width: 30rem;
+  height: 40rem;
+  overflow: hidden;
+  border-radius: 15rem 15rem 0rem 0rem;
+  border: 8px solid grey;
+}
+.image-container img {
+  /* border: 3px solid yellow; */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+/* left side  */
+
+.orange-circle {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50px;
+  background-color: orange;
+  right: 28%;
+  top: -10%;
+  position: absolute;
+  z-index: -1;
+}
+
+.left-hero {
+  /* border: 1px solid yellow; */
+  /* width: 50%; */
+  gap: 3rem;
+}
+.hero-title {
+  /* border: 1px solid white; */
+  position: relative;
+  z-index: 1;
+}
+.hero-title h1 {
+  /* border: 01px solid red; */
+  font-size: 3.8rem;
+  font-weight: 600;
+  line-height: 4rem;
+}
+/* .hero-des {
+  border: 1px solid violet;
+} */
+.search-bar {
+  background-color: white;
+  /* border: 3px solid rgba(76, 84, 94, 0.8); */
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  justify-content: space-between;
+  width: 100%;
+}
+.search-bar input {
+  margin: 0px 10px;
+  border: none;
+  outline: none;
+  color: hsla(0, 0%, 0%, 0.9);
+  font-size: 1.2rem;
+}
+.stats {
+  /* border: 1px solid red; */
+  width: 100%;
+  justify-content: space-between;
+}
+/* .stat {
+  border: solid green;
+} */
+.stat > :nth-child(1) {
+  font-size: 2rem;
+}
+.stat > :nth-child(1) > :last-child {
+  color: orange;
+}
+
+@media (max-width: 620px) {
+  .hero-container{
+    margin-top: 2rem;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .image-container{
+    width: 18rem;
+    height: 28rem;
+    border: 3px solid grey;
+  }
+  .hero-title h1{
+    font-size: 2.6rem;
+    font-weight: 550;
+    line-height: 3rem;
+  }
+  .left-hero {
+    gap: 1rem;
+  }
+  .search-bar input {
+    width: 8rem;
+    margin: 0px 0px;
+    color: hsla(0, 0%, 0%, 0.9);
+    font-size: 1rem;
+  }
+  .search-bar {
+    padding: 0.3rem 0.4rem;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .stats {
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}
