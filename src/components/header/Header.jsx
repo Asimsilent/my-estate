@@ -32,10 +32,10 @@ const Header = () => {
               <a href="">Contact</a>
             </button>
           </div>
-        </OutsideClickHandler>
         <div className="menu-icon" onClick={() => setMenuOpened((m) => !m)}>
           <BiMenuAltRight size={30} />
         </div>
+        </OutsideClickHandler>
       </div>
     </section>
   );
